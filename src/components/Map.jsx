@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css";
 
 function Map() {
   const mapContainerRef = useRef(null);
-  const key = "00BsytCW3sHS45OKpGEY";
+  const key = "YOUR_KEY_HERE (https://api.maptiler.com/)";
   useEffect(() => {
     // Initialize map
     const map = L.map(mapContainerRef.current).setView(
