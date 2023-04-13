@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css";
 
 function Map() {
   const mapContainerRef = useRef(null);
-
+  const key = "00BsytCW3sHS45OKpGEY";
   useEffect(() => {
     // Initialize map
     const map = L.map(mapContainerRef.current).setView(
@@ -14,7 +14,7 @@ function Map() {
 
     // Add tile layer to the map using MapTiler API
     const tileLayer = L.tileLayer(
-      "https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=00BsytCW3sHS45OKpGEY",
+      `https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=${key}`,
       {
         attribution:
           '&copy; <a href="https://www.maptiler.com/">MapTiler</a> contributors',
